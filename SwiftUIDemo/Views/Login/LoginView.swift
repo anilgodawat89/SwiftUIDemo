@@ -46,7 +46,7 @@ struct LoginView: View {
                         LinkButton(title: ConstantStrings.AuthFlowStrings.buttonPasswordTitle) {}
                     }
 
-                    RegisterOptionsView()
+                    registerOptionsView()
                     Spacer()
                     notTaxasCustomer()
                 }.padding(ConstantStrings.CommonStrings.globalPadding)
@@ -94,7 +94,7 @@ struct LoginView: View {
     }
 
     // Register and options
-    func RegisterOptionsView() -> some View {
+    func registerOptionsView() -> some View {
         let contentView =
                 HStack {
                     LinkButton(title:ConstantStrings.AuthFlowStrings.buttonRegisterTitle,  action: {
