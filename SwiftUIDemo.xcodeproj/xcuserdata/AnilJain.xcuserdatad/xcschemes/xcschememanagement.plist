@@ -4,10 +4,49 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>SQLite (Playground) 1.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>19</integer>
+		</dict>
+		<key>SQLite (Playground) 2.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>20</integer>
+		</dict>
+		<key>SQLite (Playground).xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>18</integer>
+		</dict>
 		<key>SwiftUIDemo.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>FE0A8A282C4BDE9100D9C7B8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FE0A8A382C4BDE9300D9C7B8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FE0A8A422C4BDE9300D9C7B8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

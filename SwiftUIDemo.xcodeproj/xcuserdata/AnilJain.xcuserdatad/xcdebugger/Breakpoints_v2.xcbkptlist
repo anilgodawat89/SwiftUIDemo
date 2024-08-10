@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "6B7CA13F-0B94-4A2D-8E14-63D264BA8140"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "48A19351-0602-409C-B54F-D855898D8C59"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftUIDemo/Views/Account/AccountListView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "AccountListCellView()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "48A19351-0602-409C-B54F-D855898D8C59 - 2087db57550b1f60"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.padding(CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Button&lt;SwiftUI.Image&gt;)&gt; in SwiftUIDemo.AccountListView.AccountListCellView() -&gt; some"
+                  moduleName = "SwiftUIDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/AnilJain/Documents/Learning/SwiftUIDemo/SwiftUIDemo/Views/Account/AccountListView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "188">
+               </Location>
+               <Location
+                  uuid = "48A19351-0602-409C-B54F-D855898D8C59 - ccfd1cf2f1b280f4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; SwiftUI.Image in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.padding(CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Button&lt;SwiftUI.Image&gt;)&gt; in SwiftUIDemo.AccountListView.AccountListCellView() -&gt; some"
+                  moduleName = "SwiftUIDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/AnilJain/Documents/Learning/SwiftUIDemo/SwiftUIDemo/Views/Account/AccountListView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "48A19351-0602-409C-B54F-D855898D8C59 - 2087db57550b1f41"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.padding(CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Button&lt;SwiftUI.Image&gt;)&gt; in SwiftUIDemo.AccountListView.AccountListCellView() -&gt; some"
+                  moduleName = "SwiftUIDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/AnilJain/Documents/Learning/SwiftUIDemo/SwiftUIDemo/Views/Account/AccountListView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  uuid = "48A19351-0602-409C-B54F-D855898D8C59 - 2087db57550b1887"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.padding(CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Button&lt;SwiftUI.Image&gt;)&gt; in SwiftUIDemo.AccountListView.AccountListCellView() -&gt; some"
+                  moduleName = "SwiftUIDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/AnilJain/Documents/Learning/SwiftUIDemo/SwiftUIDemo/Views/Account/AccountListView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "84">
+               </Location>
+               <Location
+                  uuid = "48A19351-0602-409C-B54F-D855898D8C59 - 2087db57550b1887"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.padding(CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Button&lt;SwiftUI.Image&gt;)&gt; in SwiftUIDemo.AccountListView.AccountListCellView() -&gt; some"
+                  moduleName = "SwiftUIDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/AnilJain/Documents/Learning/SwiftUIDemo/SwiftUIDemo/Views/Account/AccountListView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "68">
+               </Location>
+               <Location
+                  uuid = "48A19351-0602-409C-B54F-D855898D8C59 - 4591c11c46d7b8e7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.padding(CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Button&lt;SwiftUI.Image&gt;)&gt; in SwiftUIDemo.AccountListView.accountListCellView() -&gt; some"
+                  moduleName = "SwiftUIDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/AnilJain/Documents/Learning/SwiftUIDemo/SwiftUIDemo/Views/Account/AccountListView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "144">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B8B2194B-BC5A-4FF1-8DD6-DDB24ECD5781"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftUIDemo/Navigations/CoordinatorView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E11FC6D5-DE0A-413C-8947-06EDFD335EA8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftUIDemo/Navigations/CoordinatorView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3E5AEED4-91B5-4036-8195-FD1E3E30D358"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftUIDemo/Navigations/Coordinator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "buildMain(page:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "33BC3F08-9F38-41BE-9422-CD4092A34B4F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftUIDemo/Views/Login/LoginView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "notTaxasCustomer()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
