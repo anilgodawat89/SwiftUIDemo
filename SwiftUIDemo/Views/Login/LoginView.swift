@@ -2,14 +2,19 @@
 //  LoginView.swift
 //  SwiftUIDemo
 //
-//  Created by Anil Jain on 20/07/24.
+//  Created by Latha on 20/07/24.
 //
 
 import SwiftUI
+import LocalAuthentication
+//import Login
+//import Common
+
 
 struct LoginView: View {
     @EnvironmentObject private var coordinator: Coordinator
     @EnvironmentObject private var viewModel: LoginViewModal
+    //static let keychain: Keychain = Keychain()
     @State private var checkRememberMe = false
     @State private var checkEnableFaceId = false
 
@@ -36,7 +41,6 @@ struct LoginView: View {
 
                         }, icon: ConstantStrings.ImageNames.faceId, title: "s", position: .none).frame(width: 45.0, height: 45)
                     }.padding(.top, 10)
-
                     HStack(spacing: 10){
                         Text(ConstantStrings.AuthFlowStrings.forgotTitle)
                         LinkButton(title: ConstantStrings.AuthFlowStrings.buttonUsernameTitle) {
@@ -55,17 +59,24 @@ struct LoginView: View {
             }.applyNavigationStyle(title: "", hideNavigationBar: false, showNavigationLogo: true, rightActionType: .support).background(theme.primarySurfaceGray)
 
         }.onAppear(perform: {
+            /*if viewModel.promptForPushPermission {
+                viewModel.permissionType = .pushNotification
+                coordinator.presentFullScreenCover(.permission)
+            } else if viewModel.promptForBioMatrics{
+                viewModel.permissionType = .faceId
+                coordinator.presentFullScreenCover(.permission)
+            }*/
         })
     }
 
     func checkBoxView() -> some View {
        let contentView = HStack {
-            CheckBoxView(checked: $viewModel.rememberMe, title: ConstantStrings.AuthFlowStrings.rememberMeTitle) {
+            CheckBoxView(checked: $viewModel.isRememberMeSelected, title: ConstantStrings.AuthFlowStrings.rememberMeTitle) {
                 viewModel.handleRememberMe()
-                print("remembet me clicked", viewModel.rememberMe)
+                print("remembet me clicked", viewModel.isRememberMeSelected)
             }
             Spacer()
-            CheckBoxView(checked: self.$checkEnableFaceId, title: ConstantStrings.AuthFlowStrings.enableFaceIdTitle) {
+           CheckBoxView(checked: $viewModel.isFaceIdSelected, title: ConstantStrings.AuthFlowStrings.enableFaceIdTitle) {
                 print("faceId Clikced")
             }
         }
@@ -73,11 +84,20 @@ struct LoginView: View {
 
     }
 
+    func forgotUsernamePasswordView() -> some View {
+        let contentView  = HStack {
+            Text("By tapping Done, you agree to the \(Text("[privacy policy](https://www.google.com)").underline()) and \(Text("[Terms and Conditions](https://www.google.com)").underline())")
+                .tint(.green)
+                         .padding()
+        }
+        return AnyView(contentView)
+    }
+
     func notTaxasCustomer() -> some View {
         let contentView = HStack {
             VStack {
                 IconButton(action: {
-                    viewModel.regionSelected = false
+                    viewModel.isRegionSelected = false
                     coordinator.pop()
                 }, icon: ConstantStrings.ImageNames.locationRed, title: ConstantStrings.AuthFlowStrings.buttonNotATaxasCustomer, position: .left)
             }.tint(theme.primaryLinkColor)
@@ -107,14 +127,18 @@ struct LoginView: View {
     }
 
     func handleLoginSuccess() {
-        if viewModel.isOnBoardingDone {
-            coordinator.presentFullScreenCover(.selectAccountView)
-        } else {
-            coordinator.presentFullScreenCover(.onboarding)
-        }
+        //viewModel.callLoginService { error in
+            //print("Error Login --", error)
+            if viewModel.isOnBoardingDone {
+             coordinator.presentFullScreenCover(.selectAccountView)
+             } else {
+             coordinator.presentFullScreenCover(.onboarding)
+             }
+       // }
     }
 }
 
 #Preview {
     LoginView()
 }
+

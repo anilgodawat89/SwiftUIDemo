@@ -33,7 +33,7 @@ struct TexasTheme: ThemeProtocol {
     var buttonPrimaryText: Color = .DEBlackOut
     var buttonPrimaryBackground:Color = .DEVioletLight
     var buttonSecondaryText:Color = .DEBlackOut
-    var buttonSecondaryBackground:Color = .gray
+    var buttonSecondaryBackground:Color = .white
     var buttonDisableText:Color = .DEShadow
     var buttonDisableBackground:Color = .DEDim
     var buttonDisableBorderBackground:Color = .DEShadow

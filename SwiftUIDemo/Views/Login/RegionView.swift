@@ -18,7 +18,7 @@ struct RegionView: View {
     @EnvironmentObject private var viewModel : LoginViewModal
     @State var regionType: RegionType = .none
     var isRegionSelected: Bool {
-        return viewModel.regionSelected
+        return viewModel.isRegionSelected
     }
 
     var body: some View {
@@ -30,11 +30,11 @@ struct RegionView: View {
                     .frame( maxWidth: .infinity)
                     .applyTextStyle(theme.header1Style)
                     .multilineTextAlignment(.center)
-                    .background(.red)
+                    
 
                 VStack(spacing: ConstantStrings.CommonStrings.globalElementPadding) {
                     PrimaryButton(title: ConstantStrings.AuthFlowStrings.buttonTitleTaxas) {
-                        viewModel.regionSelected = true
+                        viewModel.isRegionSelected = true
                         viewModel.selectedRegion = .texas
                         coordinator.push(page: .login)
                     }
@@ -46,7 +46,7 @@ struct RegionView: View {
             }.padding(ConstantStrings.CommonStrings.globalPadding)
                 .navigationBarHidden(true)
                 .onAppear(perform: {
-                    if viewModel.regionSelected {
+                    if viewModel.isRegionSelected {
                         coordinator.push(page: .login)
                     }
                 })
