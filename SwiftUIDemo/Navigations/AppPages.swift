@@ -37,6 +37,7 @@ enum FullScreenCover: String, Identifiable {
     }
     case onboarding
     case permission
+    case errorView
     case forgotusername
     case selectAccountView
     case support

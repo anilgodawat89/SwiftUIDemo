@@ -15,7 +15,7 @@ public enum RegionType {
 
 struct RegionView: View {
     @EnvironmentObject private var coordinator: Coordinator
-    @StateObject private var viewModel = LoginViewModal()
+    @EnvironmentObject private var viewModel : LoginViewModal
     @State var regionType: RegionType = .none
     var isRegionSelected: Bool {
         return viewModel.regionSelected
@@ -46,7 +46,7 @@ struct RegionView: View {
             }.padding(ConstantStrings.CommonStrings.globalPadding)
                 .navigationBarHidden(true)
                 .onAppear(perform: {
-                    if isRegionSelected {
+                    if viewModel.regionSelected {
                         coordinator.push(page: .login)
                     }
                 })

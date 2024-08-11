@@ -54,7 +54,9 @@
 		FE50604F2C5639B40085C08F /* BasicSans-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = FE5060262C55F15E0085C08F /* BasicSans-Thin.otf */; };
 		FE5060502C5639B40085C08F /* BasicSans-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = FE50602D2C55F15E0085C08F /* BasicSans-ExtraLight.otf */; };
 		FE5060512C5639B40085C08F /* BasicSans-LightIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = FE50602A2C55F15E0085C08F /* BasicSans-LightIt.otf */; };
+		FE6825CD2C6851AA00685061 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6825CC2C6851AA00685061 /* ErrorView.swift */; };
 		FE80F8A82C6742B20072DF5E /* IconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE80F8A72C6742B20072DF5E /* IconButton.swift */; };
+		FED7CE0E2C685F4C00E4DF51 /* ErrorViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED7CE0D2C685F4C00E4DF51 /* ErrorViewModal.swift */; };
 		FEE1E5522C51280100B69F47 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEE1E5512C51280100B69F47 /* Color.xcassets */; };
 		FEE1E5552C51284600B69F47 /* ThemeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE1E5542C51284600B69F47 /* ThemeProtocol.swift */; };
 		FEE1E5572C51345600B69F47 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE1E5562C51345600B69F47 /* ThemeManager.swift */; };
@@ -131,7 +133,9 @@
 		FE5060322C55F15F0085C08F /* BasicSans-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BasicSans-Bold.otf"; sourceTree = "<group>"; };
 		FE5060342C5602520085C08F /* DENavigationStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DENavigationStyle.swift; sourceTree = "<group>"; };
 		FE5060552C563DEC0085C08F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE6825CC2C6851AA00685061 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		FE80F8A72C6742B20072DF5E /* IconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconButton.swift; sourceTree = "<group>"; };
+		FED7CE0D2C685F4C00E4DF51 /* ErrorViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewModal.swift; sourceTree = "<group>"; };
 		FEE1E5512C51280100B69F47 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
 		FEE1E5542C51284600B69F47 /* ThemeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeProtocol.swift; sourceTree = "<group>"; };
 		FEE1E5562C51345600B69F47 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
@@ -254,6 +258,7 @@
 				FE5060182C5414150085C08F /* PermissionView.swift */,
 				FE0A8A692C4CF20800D9C7B8 /* ForgotUsernameView.swift */,
 				FE5060212C55E30C0085C08F /* OnboardingView.swift */,
+				FE6825CC2C6851AA00685061 /* ErrorView.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -325,6 +330,7 @@
 			isa = PBXGroup;
 			children = (
 				FE3FDB5D2C5AB77100515980 /* LoginViewModal.swift */,
+				FED7CE0D2C685F4C00E4DF51 /* ErrorViewModal.swift */,
 			);
 			path = ViewModal;
 			sourceTree = "<group>";
@@ -564,12 +570,14 @@
 				FE24E6542C5F64F00045931A /* SplashView.swift in Sources */,
 				FEE1E5572C51345600B69F47 /* ThemeManager.swift in Sources */,
 				FE80F8A82C6742B20072DF5E /* IconButton.swift in Sources */,
+				FED7CE0E2C685F4C00E4DF51 /* ErrorViewModal.swift in Sources */,
 				FE0A8A602C4C2CB100D9C7B8 /* NavigationBarView.swift in Sources */,
 				FE24E64F2C5F41950045931A /* SceneDelegate.swift in Sources */,
 				FE3FDB552C5A551100515980 /* AccountListView.swift in Sources */,
 				FE3FDB502C5696E900515980 /* SecondaryButton.swift in Sources */,
 				FE0A8A5D2C4C245100D9C7B8 /* LoginView.swift in Sources */,
 				FE5060222C55E30C0085C08F /* OnboardingView.swift in Sources */,
+				FE6825CD2C6851AA00685061 /* ErrorView.swift in Sources */,
 				FE5060202C5491B90085C08F /* Coordinator.swift in Sources */,
 				FEE1E5602C532FBB00B69F47 /* DETextStyle.swift in Sources */,
 				FE5060242C55F0130085C08F /* AppLogoView.swift in Sources */,

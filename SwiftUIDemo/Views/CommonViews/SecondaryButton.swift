@@ -9,6 +9,8 @@ import Foundation
 import SwiftUI
 struct SecondayButton: View {
     var title: String
+    var leftIcon: String = ""
+    var rightIcon: String = ""
     var disabled: Bool = false
     var action: () -> Void
     var height: CGFloat = 45
@@ -16,8 +18,17 @@ struct SecondayButton: View {
 
     var body: some View {
         Button(action: action) {
-            Text(title)
-                .frame(maxWidth: .infinity, minHeight: 50)
+            HStack {
+                if !leftIcon.isEmpty {
+                    Image(leftIcon)
+                }
+
+                Text(title)
+
+                if !rightIcon.isEmpty {
+                    Image(rightIcon)
+                }
+            }.frame(maxWidth: .infinity, minHeight: 50)
                 .foregroundColor(disabled ? theme.buttonDisableText : theme.buttonSecondaryText )
                 .background(disabled ? theme.buttonDisableBackground : theme.buttonSecondaryBackground)
                 .font(.custom(theme.fontNames.bold, size: 16))

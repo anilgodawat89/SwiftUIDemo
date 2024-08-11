@@ -99,6 +99,11 @@ class Coordinator: ObservableObject {
             }
         case .onboarding:
             OnboardingView()
+
+        case .errorView:
+            NavigationStack {
+                ErrorView()
+            }
         case .forgotusername: ForgotUsernameView()
         }
 

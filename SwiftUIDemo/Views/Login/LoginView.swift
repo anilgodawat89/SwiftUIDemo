@@ -9,7 +9,7 @@ import SwiftUI
 
 struct LoginView: View {
     @EnvironmentObject private var coordinator: Coordinator
-    @StateObject private var viewModel = LoginViewModal()
+    @EnvironmentObject private var viewModel: LoginViewModal
     @State private var checkRememberMe = false
     @State private var checkEnableFaceId = false
 
@@ -73,19 +73,11 @@ struct LoginView: View {
 
     }
 
-    func forgotUsernamePasswordView() -> some View {
-        let contentView  = HStack {
-            Text("By tapping Done, you agree to the \(Text("[privacy policy](https://www.google.com)").underline()) and \(Text("[Terms and Conditions](https://www.google.com)").underline())")
-                .tint(.green)
-                         .padding()
-        }
-        return AnyView(contentView)
-    }
-
     func notTaxasCustomer() -> some View {
         let contentView = HStack {
             VStack {
                 IconButton(action: {
+                    viewModel.regionSelected = false
                     coordinator.pop()
                 }, icon: ConstantStrings.ImageNames.locationRed, title: ConstantStrings.AuthFlowStrings.buttonNotATaxasCustomer, position: .left)
             }.tint(theme.primaryLinkColor)
@@ -98,13 +90,17 @@ struct LoginView: View {
         let contentView =
                 HStack {
                     LinkButton(title:ConstantStrings.AuthFlowStrings.buttonRegisterTitle,  action: {
-
+                        ErrorViewModal.sharedViewModal.errorType = .outage
+                        coordinator.presentFullScreenCover(.errorView)
                     })
                     LinkButton(title: ConstantStrings.AuthFlowStrings.buttonEapanolTitle,  action: {
+                        ErrorViewModal.sharedViewModal.errorType = .requireForceUpdate
+                        coordinator.presentFullScreenCover(.errorView)
 
                     })
                     LinkButton(title: ConstantStrings.AuthFlowStrings.buttonSupportTitle,  action: {
-
+                        ErrorViewModal.sharedViewModal.errorType  = .updateRecommended
+                        coordinator.presentFullScreenCover(.errorView)
                     })
                 }
         return AnyView(contentView)
